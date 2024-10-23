@@ -20,7 +20,7 @@ export default function About() {
         >
           <nav>
             <h1
-              className="Gilroy-Semibold text-slate-50 text-balance leading-[50px] w-full"
+              className="Gilroy-Semibold text-[#0d0d0d] text-balance leading-[50px] w-full"
               style={{
                 fontSize: "clamp(25px, 9vw, 100px)",
                 lineHeight: "clamp(30px, 5vw, 50px)",
@@ -41,17 +41,17 @@ export default function About() {
           </nav>
           <div className="mt-[50px]">
             <div>
-              <h1 className="Gilroy-Semibold text-slate-50 text-balance text-[25px] pb-4">
+              <h1 className="Gilroy-Semibold text-[#0d0d0d] text-balance text-[25px] pb-4">
                 Meet the team
               </h1>
             </div>
             <nav>
               <div className="flex gap-5 flex-wrap">
                 <div
-                  className={`flex justify-between items-center gap-5 w-full max-w-[500px] h-auto p-6 bg-[#111111] rounded-[8px] border-[1px] ${
+                  className={`flex justify-between items-center gap-5 w-full max-w-[500px] h-auto p-6 bg-[#E8E8E8] border-2 rounded-[8px] duration-150 ease-in-out ${
                     selectedMember === "Asjer"
                       ? "border-[#3a86ff]"
-                      : "border-[#222222]"
+                      : "border-none"
                   } cursor-pointer`}
                   onClick={() => setSelectedMember("Asjer")}
                 >
@@ -66,20 +66,20 @@ export default function About() {
                       <AvatarFallback>AB</AvatarFallback>
                     </Avatar>
                     <div>
-                      <h1 className="Gilroy-Regular text-slate-50 leading-[10px] text-[20px]">
+                      <h1 className="Gilroy-Regular text-[#0d0d0d] leading-[10px] text-[20px]">
                         Asjer Bereket
                       </h1>
-                      <p className="Gilroy-Regular text-slate-50 leading-[10px] text-[16px]">
+                      <p className="Gilroy-Regular text-[#0d0d0d] leading-[10px] text-[16px]">
                         Front-end Dev, Designer
                       </p>
                     </div>
                   </div>
                 </div>
                 <div
-                  className={`flex justify-between items-center gap-5 w-full max-w-[500px] h-auto p-6 bg-[#111111] rounded-[8px] border-[1px] ${
+                  className={`flex justify-between items-center gap-5 w-full max-w-[500px] h-auto p-6 bg-[#E8E8E8] border-2 rounded-[8px] duration-150 ease-in-out ${
                     selectedMember === "Timur"
                       ? "border-[#3a86ff]"
-                      : "border-[#222222]"
+                      : "border-none"
                   } cursor-pointer`}
                   onClick={() => setSelectedMember("Timur")}
                 >
@@ -94,10 +94,10 @@ export default function About() {
                       <AvatarFallback>TG</AvatarFallback>
                     </Avatar>
                     <div>
-                      <h1 className="Gilroy-Regular text-slate-50 leading-[10px] text-[20px]">
+                      <h1 className="Gilroy-Regular text-[#0d0d0d] leading-[10px] text-[20px]">
                         Timur Gusarov
                       </h1>
-                      <p className="Gilroy-Regular text-slate-50 leading-[15px] text-[16px]">
+                      <p className="Gilroy-Regular text-[#0d0d0d] leading-[15px] text-[16px]">
                         Back-end Dev, IT-Operator
                       </p>
                     </div>
@@ -108,7 +108,7 @@ export default function About() {
           </div>
           <div className="mt-10">
             {selectedMember === "Asjer" && (
-              <p className="Gilroy-Regular text-[25px] text-slate-50">
+              <p className="Gilroy-Regular text-[25px] text-[#0d0d0d]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
                 porro deserunt illo eligendi minus architecto, laboriosam dolor
                 provident perferendis maiores sed voluptatum saepe repudiandae
@@ -120,7 +120,7 @@ export default function About() {
               </p>
             )}
             {selectedMember === "Timur" && (
-              <p className="Gilroy-Regular text-[25px] text-slate-50">
+              <p className="Gilroy-Regular text-[25px] text-[#0d0d0d]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
                 porro deserunt illo eligendi minus architecto, laboriosam dolor
                 provident perferendis maiores sed voluptatum saepe repudiandae

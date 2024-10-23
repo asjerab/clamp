@@ -5,7 +5,7 @@
 /* Body and Html css kode */
 body {
   overflow-x: hidden;
-  background-color: hsla(0, 0%, 7%, 1);
+  background-color: #ffffff;
 }
 
 html {
@@ -96,8 +96,31 @@ nav p {
   .pricing-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .pricing-wrapper {
+    max-width: 768px;
+  }
+
+  .accordion-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
   }
+
+  .accordion-wrapper {
+    max-width: 768px;
+  }
+
+  .accordion-card-container {
+    flex-direction: column;
+  }
+
+
 }
 @media screen and (max-width: 768px) {
   .navHomeAboutFlex {
@@ -154,18 +177,18 @@ nav p {
 }
 
 @media screen and (max-width: 500px) {
-  .Menu {
+  .openMenuNav {
     position: fixed;
-    width: calc(
-      100% - 40px
-    ); /* Adjust this based on how much margin you want */
-    bottom: 0;
-    left: 20px; /* To ensure it's not clipped on the left */
-    right: 10px; /* To ensure it's not clipped on the right */
-    bottom: 20px;
+    width: 100%;
+    max-width: 90%;
+    bottom: 20px; /* Adjusted to keep it at the bottom */
+    left: 0; /* Centering adjustments */
+    right: 0; /* Centering adjustments */
+    margin: 0 auto; /* Center the menu */
     padding: 20px; /* Optional padding inside the menu */
     box-sizing: border-box; /* Ensure padding is included in width calculation */
   }
+  
 }
 
 @layer base {
@@ -221,14 +244,5 @@ nav p {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
   }
 }

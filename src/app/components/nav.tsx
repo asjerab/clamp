@@ -16,7 +16,7 @@ const Nav: React.FC = () => {
           <div>
             <Link href="/">
               <h1
-                className="Gilroy-Semibold font-[700] text-[45px] text-slate-50"
+                className="Gilroy-Semibold font-[700] text-[45px] text-[#1b1b1b]"
                 id="Logo"
               >
                 clamp
@@ -25,167 +25,107 @@ const Nav: React.FC = () => {
           </div>
 
           <div className="flex gap-4 items-center">
+            {isMenuOpen ? (
+              <svg
+                onClick={toggleMenu}
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="size-10 text-[#1b1b1b] cursor-pointer"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                onClick={toggleMenu}
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="size-10 text-[#1b1b1b] cursor-pointer"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            )}
+          </div>
+        </div>
+
+        {/* Dropdown menu */}
+        {isMenuOpen && (
+          <div className="openMenuNav absolute right-0 bg-[#1b1b1b] z-50 p-6 mt-2 rounded-[16px] w-full max-w-[350px]">
             <Link
-              className="hidden-nav-menu-item Gilroy-Medium text-[20px] text-slate-50"
+              className="flex items-center justify-between text-slate-50 text-[20px] mb-2 p-2 hover:underline decoration-[#3a86ff] duration-150 ease-in-out"
               href="/About"
             >
               About
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
             </Link>
             <Link
-              className="hidden-nav-menu-item Gilroy-Medium text-[20px] text-slate-50"
+              className="flex items-center justify-between text-slate-50 text-[20px] mb-2 p-2 hover:underline decoration-[#3a86ff] duration-150 ease-in-out"
               href="/Work"
             >
               Work
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
             </Link>
             <Link
-              className="hidden-nav-menu-item Gilroy-Medium text-[16px] text-slate-50 bg-[#3a86ff] px-4 py-2 rounded-[16px]"
+              className="flex items-center justify-between text-slate-50 text-[20px] p-2 hover:underline decoration-[#3a86ff] duration-150 ease-in-out"
               href="/Contact"
             >
               Contact
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
             </Link>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              className="hidden-nav-menu-icon hidden size-10 text-slate-50"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
           </div>
-
-          {/*           <div className="relative">
-            {" "}
-            <button
-              onClick={toggleMenu}
-              className="Gilroy-Medium flex items-center gap-2 border-[2px] border-[#ffffff] border-opacity-[25%] px-[20px] py-[8px] rounded-[16px] text-slate-50 hover:bg-[#18181b] hover:border-[#18181b]"
-            >
-              <p className="font-medium text-[20px]">
-                {isMenuOpen ? "Close" : "Menu"}
-              </p>
-              {isMenuOpen ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  className="size-6 text-slate-50"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 18 18 6M6 6l12 12"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  className="size-6 text-slate-50"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3.75 9h16.5m-16.5 6.75h16.5"
-                  />
-                </svg>
-              )}
-            </button>
-            {isMenuOpen && (
-              <div className="Menu-wrapper">
-                <div className="Menu absolute right-0 mt-2 w-[360px] h-auto border-[1px] border-[#111111] border-opacity-[25%] p-4 rounded-[8px] bg-[#18181b] z-10">
-                  <Link
-                    href="/About"
-                    className="flex justify-between items-center my-2"
-                  >
-                    <p className="Gilroy-Semibold text-[17px] text-slate-50">
-                      About
-                    </p>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      className="size-5 text-slate-50"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                      />
-                    </svg>
-                  </Link>
-
-                  <Link
-                    href="/"
-                    className="flex justify-between items-center my-4"
-                  >
-                    <p className="Gilroy-Semibold text-[17px] text-slate-50">
-                      Portfolio
-                    </p>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      className="size-5 text-slate-50"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                      />
-                    </svg>
-                  </Link>
-
-                  <Link
-                    href="/"
-                    className="flex justify-between items-center my-4"
-                  >
-                    <p className="Gilroy-Semibold text-[17px] text-slate-50">
-                      Pricing
-                    </p>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      className="size-5 text-slate-50"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                      />
-                    </svg>
-                  </Link>
-                  <Link href="/contact">
-                    <button
-                      className="bg-[#ffffff] w-full p-[7px] my-2 rounded-[8px]"
-                      id="button"
-                    >
-                      <p className="Gilroy-Semibold text-slate-[#111111]">
-                        Contact
-                      </p>
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            )}
-          </div> */}
-        </div>
+        )}
       </nav>
     </main>
   );

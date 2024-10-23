@@ -8,7 +8,7 @@ export default function Pricing() {
       <div className="w-full max-w-[1200px] p-5">
         <nav className="flex flex-col items-center gap-4">
           <h1
-            className="Gilroy-Bold text-slate-50 leading-[30px]"
+            className="Gilroy-Bold text-[#0d0d0d] leading-[30px]"
             style={{ fontSize: "clamp(35px, 5vw, 45px)" }}
           >
             Find a plan that suits your needs
@@ -24,7 +24,7 @@ export default function Pricing() {
             assist you.
           </p>
           <Tabs defaultValue="Monthly" className="w-full">
-            <TabsList className="bg-[#18181b] rounded-[16px] mb-5">
+            <TabsList className="bg-[#00000028] rounded-full mb-5">
               <TabsTrigger className="rounded-[16px]" value="Monthly">
                 Monthly
               </TabsTrigger>
@@ -35,10 +35,10 @@ export default function Pricing() {
             <TabsContent className="w-full" value="Monthly">
               <div className="flex justify-between w-full gap-5 pricing-container">
                 <div className="pricing-wrapper my-10 w-full">
-                  <div className="pricing-card flex flex-col items-start border-[1px] h-auto w-ful border-[#3d3d3d] p-6 py-14 rounded-[28px] hover:border-[#3a86ff] duration-150 ease-in-out">
+                  <div className="flex flex-col items-start border-[1px] h-auto w-full border-opacity-25 border-[#3d3d3d] p-6 py-14 rounded-[28px] hover:border-[#3a86ff] duration-150 ease-in-out">
                     <nav className="flex flex-col items-start pb-[25px]">
                       <h1
-                        className="Gilroy-Semibold text-slate-50 leading-[25px]"
+                        className="Gilroy-Semibold text-[#0d0d0d] leading-[25px]"
                         style={{ fontSize: "clamp(40px, 5vw, 45px)" }}
                       >
                         Low
@@ -49,7 +49,7 @@ export default function Pricing() {
                     </nav>
                     <div className="w-full">
                       <h1
-                        className="flex flex-col items-center justify-center Gilroy-Semibold text-center text-slate-50 leading-[25px] py-[55px]"
+                        className="flex flex-col items-center justify-center Gilroy-Semibold text-center text-[#0d0d0d] leading-[25px] py-[55px]"
                         style={{
                           fontSize: "clamp(40px, 5vw, 45px)",
                           paddingTop: "clamp(25px, 5vw, 55px)",
@@ -60,13 +60,13 @@ export default function Pricing() {
                       </h1>
                     </div>
                     <div className="w-full">
-                      <Button className="w-full bg-[#ffffff] text-[#111111] hover:bg-none hover:text-[#ffffff] rounded-[16px]">
+                      <Button className="w-full bg-[#0d0d0d] text-[#ffffff] hover:bg-[#1b1b1b] hover:text-[#dddddd] rounded-[16px]">
                         Get Started
                       </Button>
                     </div>
                     <div className="pt-10 flex flex-col items-start gap-2">
                       <p
-                        className="Gilroy-Regular text-[#ffffff] flex items-center gap-2 "
+                        className="Gilroy-Regular text-[#0d0d0d] flex items-center gap-2 "
                         style={{ fontSize: "clamp(12px, 2.5vw, 15px)" }}
                       >
                         <svg
@@ -86,7 +86,7 @@ export default function Pricing() {
                         <span>Something</span>
                       </p>
                       <p
-                        className="Gilroy-Regular text-[#ffffff] flex items-center gap-2 "
+                        className="Gilroy-Regular text-[#0d0d0d] flex items-center gap-2 "
                         style={{ fontSize: "clamp(12px, 2.5vw, 15px)" }}
                       >
                         <svg
@@ -106,7 +106,7 @@ export default function Pricing() {
                         <span>Something</span>
                       </p>
                       <p
-                        className="Gilroy-Regular text-[#ffffff] flex items-center gap-2 "
+                        className="Gilroy-Regular text-[#0d0d0d] flex items-center gap-2 "
                         style={{ fontSize: "clamp(12px, 2.5vw, 15px)" }}
                       >
                         <svg
@@ -129,10 +129,10 @@ export default function Pricing() {
                   </div>
                 </div>
                 <div className=" pricing-wrapper my-10 w-full">
-                  <div className="pricing-card flex flex-col items-start border-[1px] h-auto w-full  border-[#3d3d3d] p-6 py-14 rounded-[28px] hover:border-[#3a86ff] duration-150 ease-in-out">
+                  <div className="flex flex-col items-start border-[1px] h-auto w-full border-opacity-25 border-[#3d3d3d] p-6 py-14 rounded-[28px] hover:border-[#3a86ff] duration-150 ease-in-out">
                     <nav className="flex flex-col items-start pb-[25px]">
                       <h1
-                        className="Gilroy-Semibold text-slate-50 leading-[25px]"
+                        className="Gilroy-Semibold text-[#0d0d0d] leading-[25px]"
                         style={{ fontSize: "clamp(40px, 5vw, 45px)" }}
                       >
                         Medium
@@ -143,7 +143,7 @@ export default function Pricing() {
                     </nav>
                     <div className="w-full">
                       <h1
-                        className="Gilroy-Semibold text-center text-slate-50 leading-[25px] py-[55px]"
+                        className="Gilroy-Semibold text-center text-[#0d0d0d] leading-[25px] py-[55px]"
                         style={{
                           fontSize: "clamp(40px, 5vw, 45px)",
                           paddingTop: "clamp(25px, 5vw, 55px)",
@@ -154,13 +154,13 @@ export default function Pricing() {
                       </h1>
                     </div>
                     <div className="w-full">
-                      <Button className="w-full bg-[#ffffff] text-[#111111] hover:bg-none hover:text-[#ffffff] rounded-[16px]">
+                      <Button className="w-full bg-[#0d0d0d] text-[#ffffff] hover:bg-[#1b1b1b] hover:text-[#dddddd] rounded-[16px]">
                         Get Started
                       </Button>
                     </div>
                     <div className="pt-10 flex flex-col items-start gap-2">
                       <p
-                        className="Gilroy-Regular text-[#ffffff] flex items-center gap-2 "
+                        className="Gilroy-Regular text-[#0d0d0d] flex items-center gap-2 "
                         style={{ fontSize: "clamp(12px, 2.5vw, 15px)" }}
                       >
                         <svg
@@ -180,7 +180,7 @@ export default function Pricing() {
                         <span>Something</span>
                       </p>
                       <p
-                        className="Gilroy-Regular text-[#ffffff] flex items-center gap-2 "
+                        className="Gilroy-Regular text-[#0d0d0d] flex items-center gap-2 "
                         style={{ fontSize: "clamp(12px, 2.5vw, 15px)" }}
                       >
                         <svg
@@ -200,7 +200,7 @@ export default function Pricing() {
                         <span>Something</span>
                       </p>
                       <p
-                        className="Gilroy-Regular text-[#ffffff] flex items-center gap-2 "
+                        className="Gilroy-Regular text-[#0d0d0d] flex items-center gap-2 "
                         style={{ fontSize: "clamp(12px, 2.5vw, 15px)" }}
                       >
                         <svg
@@ -223,10 +223,10 @@ export default function Pricing() {
                   </div>
                 </div>
                 <div className=" pricing-wrapper my-10 w-full pricing-container">
-                  <div className="pricing-card flex flex-col items-start border-[1px] h-auto w-full  border-[#3d3d3d] p-6 py-14 rounded-[28px] hover:border-[#3a86ff] duration-150 ease-in-out">
+                  <div className="flex flex-col items-start border-[1px] h-auto w-full border-opacity-25 border-[#3d3d3d] p-6 py-14 rounded-[28px] hover:border-[#3a86ff] duration-150 ease-in-out">
                     <nav className="flex flex-col items-start pb-[25px]">
                       <h1
-                        className="Gilroy-Semibold text-slate-50 leading-[25px]"
+                        className="Gilroy-Semibold text-[#0d0d0d] leading-[25px]"
                         style={{ fontSize: "clamp(40px, 5vw, 45px)" }}
                       >
                         High
@@ -237,7 +237,7 @@ export default function Pricing() {
                     </nav>
                     <div className="w-full">
                       <h1
-                        className="Gilroy-Semibold text-center text-slate-50 leading-[25px] py-[55px]"
+                        className="Gilroy-Semibold text-center text-[#0d0d0d] leading-[25px] py-[55px]"
                         style={{
                           fontSize: "clamp(40px, 5vw, 45px)",
                           paddingTop: "clamp(25px, 5vw, 55px)",
@@ -248,13 +248,13 @@ export default function Pricing() {
                       </h1>
                     </div>
                     <div className="w-full">
-                      <Button className="w-full bg-[#ffffff] text-[#111111] hover:bg-none hover:text-[#ffffff] rounded-[16px]">
+                      <Button className="w-full bg-[#0d0d0d] text-[#ffffff] hover:bg-[#1b1b1b] hover:text-[#dddddd] rounded-[16px]">
                         Get Started
                       </Button>
                     </div>
                     <div className="pt-10 flex flex-col items-start gap-2">
                       <p
-                        className="Gilroy-Regular text-[#ffffff] flex items-center gap-2 "
+                        className="Gilroy-Regular text-[#0d0d0d] flex items-center gap-2 "
                         style={{ fontSize: "clamp(12px, 2.5vw, 15px)" }}
                       >
                         <svg
@@ -274,7 +274,7 @@ export default function Pricing() {
                         <span>Something</span>
                       </p>
                       <p
-                        className="Gilroy-Regular text-[#ffffff] flex items-center gap-2 "
+                        className="Gilroy-Regular text-[#0d0d0d] flex items-center gap-2 "
                         style={{ fontSize: "clamp(12px, 2.5vw, 15px)" }}
                       >
                         <svg
@@ -294,7 +294,7 @@ export default function Pricing() {
                         <span>Something</span>
                       </p>
                       <p
-                        className="Gilroy-Regular text-[#ffffff] flex items-center gap-2 "
+                        className="Gilroy-Regular text-[#0d0d0d] flex items-center gap-2 "
                         style={{ fontSize: "clamp(12px, 2.5vw, 15px)" }}
                       >
                         <svg
@@ -321,10 +321,10 @@ export default function Pricing() {
             <TabsContent value="Yearly">
               <div className="flex justify-between gap-5 w-full pricing-container">
                 <div className=" pricing-wrapper my-10 w-full">
-                  <div className="flex flex-col items-start border-[1px] h-auto w-full  border-[#3d3d3d] p-6 py-14 rounded-[28px] hover:border-[#3a86ff] duration-150 ease-in-out">
+                  <div className="flex flex-col items-start border-[1px] h-auto w-full border-opacity-25 border-[#3d3d3d] p-6 py-14 rounded-[28px] hover:border-[#3a86ff] duration-150 ease-in-out">
                     <nav className="flex flex-col items-start pb-[25px]">
                       <h1
-                        className="Gilroy-Semibold text-slate-50 leading-[25px]"
+                        className="Gilroy-Semibold text-[#0d0d0d] leading-[25px]"
                         style={{ fontSize: "clamp(40px, 5vw, 45px)" }}
                       >
                         Low
@@ -335,7 +335,7 @@ export default function Pricing() {
                     </nav>
                     <div className="w-full">
                       <h1
-                        className="Gilroy-Semibold text-center text-slate-50 leading-[25px] py-[55px]"
+                        className="Gilroy-Semibold text-center text-[#0d0d0d] leading-[25px] py-[55px]"
                         style={{
                           fontSize: "clamp(40px, 5vw, 45px)",
                           paddingTop: "clamp(25px, 5vw, 55px)",
@@ -346,13 +346,13 @@ export default function Pricing() {
                       </h1>
                     </div>
                     <div className="w-full">
-                      <Button className="w-full bg-[#ffffff] text-[#111111] hover:bg-none hover:text-[#ffffff] rounded-[16px]">
+                      <Button className="w-full bg-[#0d0d0d] text-[#ffffff] hover:bg-[#1b1b1b] hover:text-[#dddddd] rounded-[16px]">
                         Get Started
                       </Button>
                     </div>
                     <div className="pt-10 flex flex-col items-start gap-2">
                       <p
-                        className="Gilroy-Regular text-[#ffffff] flex items-center gap-2 "
+                        className="Gilroy-Regular text-[#0d0d0d] flex items-center gap-2 "
                         style={{ fontSize: "clamp(12px, 2.5vw, 15px)" }}
                       >
                         <svg
@@ -372,7 +372,7 @@ export default function Pricing() {
                         <span>Something</span>
                       </p>
                       <p
-                        className="Gilroy-Regular text-[#ffffff] flex items-center gap-2 "
+                        className="Gilroy-Regular text-[#0d0d0d] flex items-center gap-2 "
                         style={{ fontSize: "clamp(12px, 2.5vw, 15px)" }}
                       >
                         <svg
@@ -392,7 +392,7 @@ export default function Pricing() {
                         <span>Something</span>
                       </p>
                       <p
-                        className="Gilroy-Regular text-[#ffffff] flex items-center gap-2 "
+                        className="Gilroy-Regular text-[#0d0d0d] flex items-center gap-2 "
                         style={{ fontSize: "clamp(12px, 2.5vw, 15px)" }}
                       >
                         <svg
@@ -415,10 +415,10 @@ export default function Pricing() {
                   </div>
                 </div>
                 <div className=" pricing-wrapper my-10 w-full">
-                  <div className="flex flex-col items-start border-[1px] h-auto w-full  border-[#3d3d3d] p-6 py-14 rounded-[28px] hover:border-[#3a86ff] duration-150 ease-in-out">
+                  <div className="flex flex-col items-start border-[1px] h-auto w-full border-opacity-25 border-[#3d3d3d] p-6 py-14 rounded-[28px] hover:border-[#3a86ff] duration-150 ease-in-out">
                     <nav className="flex flex-col items-start pb-[25px]">
                       <h1
-                        className="Gilroy-Semibold text-slate-50 leading-[25px]"
+                        className="Gilroy-Semibold text-[#0d0d0d] leading-[25px]"
                         style={{ fontSize: "clamp(40px, 5vw, 45px)" }}
                       >
                         Medium
@@ -429,7 +429,7 @@ export default function Pricing() {
                     </nav>
                     <div className="w-full">
                       <h1
-                        className="Gilroy-Semibold text-center text-slate-50 leading-[25px] py-[55px]"
+                        className="Gilroy-Semibold text-center text-[#0d0d0d] leading-[25px] py-[55px]"
                         style={{
                           fontSize: "clamp(40px, 5vw, 45px)",
                           paddingTop: "clamp(25px, 5vw, 55px)",
@@ -440,13 +440,13 @@ export default function Pricing() {
                       </h1>
                     </div>
                     <div className="w-full">
-                      <Button className="w-full bg-[#ffffff] text-[#111111] hover:bg-none hover:text-[#ffffff] rounded-[16px]">
+                      <Button className="w-full bg-[#0d0d0d] text-[#ffffff] hover:bg-[#1b1b1b] hover:text-[#dddddd] rounded-[16px]">
                         Get Started
                       </Button>
                     </div>
                     <div className="pt-10 flex flex-col items-start gap-2">
                       <p
-                        className="Gilroy-Regular text-[#ffffff] flex items-center gap-2 "
+                        className="Gilroy-Regular text-[#0d0d0d] flex items-center gap-2 "
                         style={{ fontSize: "clamp(12px, 2.5vw, 15px)" }}
                       >
                         <svg
@@ -466,7 +466,7 @@ export default function Pricing() {
                         <span>Something</span>
                       </p>
                       <p
-                        className="Gilroy-Regular text-[#ffffff] flex items-center gap-2 "
+                        className="Gilroy-Regular text-[#0d0d0d] flex items-center gap-2 "
                         style={{ fontSize: "clamp(12px, 2.5vw, 15px)" }}
                       >
                         <svg
@@ -486,7 +486,7 @@ export default function Pricing() {
                         <span>Something</span>
                       </p>
                       <p
-                        className="Gilroy-Regular text-[#ffffff] flex items-center gap-2 "
+                        className="Gilroy-Regular text-[#0d0d0d] flex items-center gap-2 "
                         style={{ fontSize: "clamp(12px, 2.5vw, 15px)" }}
                       >
                         <svg
@@ -509,10 +509,10 @@ export default function Pricing() {
                   </div>
                 </div>
                 <div className=" pricing-wrapper my-10 w-full">
-                  <div className="flex flex-col items-start border-[1px] h-auto w-full  border-[#3d3d3d] p-6 py-14 rounded-[28px] hover:border-[#3a86ff] duration-150 ease-in-out">
+                  <div className="flex flex-col items-start border-[1px] h-auto w-full border-opacity-25 border-[#3d3d3d] p-6 py-14 rounded-[28px] hover:border-[#3a86ff] duration-150 ease-in-out">
                     <nav className="flex flex-col items-start pb-[25px]">
                       <h1
-                        className="Gilroy-Semibold text-slate-50 leading-[25px]"
+                        className="Gilroy-Semibold text-[#0d0d0d] leading-[25px]"
                         style={{ fontSize: "clamp(40px, 5vw, 45px)" }}
                       >
                         High
@@ -523,7 +523,7 @@ export default function Pricing() {
                     </nav>
                     <div className="w-full">
                       <h1
-                        className="Gilroy-Semibold text-center text-slate-50 leading-[25px] py-[55px]"
+                        className="Gilroy-Semibold text-center text-[#0d0d0d] leading-[25px] py-[55px]"
                         style={{
                           fontSize: "clamp(40px, 5vw, 45px)",
                           paddingTop: "clamp(25px, 5vw, 55px)",
@@ -534,13 +534,13 @@ export default function Pricing() {
                       </h1>
                     </div>
                     <div className="w-full">
-                      <Button className="w-full bg-[#ffffff] text-[#111111] hover:bg-none hover:text-[#ffffff] rounded-[16px]">
+                      <Button className="w-full bg-[#0d0d0d] text-[#ffffff] hover:bg-[#1b1b1b] hover:text-[#dddddd] rounded-[16px]">
                         Get Started
                       </Button>
                     </div>
                     <div className="pt-10 flex flex-col items-start gap-2">
                       <p
-                        className="Gilroy-Regular text-[#ffffff] flex items-center gap-2 "
+                        className="Gilroy-Regular text-[#0d0d0d] flex items-center gap-2 "
                         style={{ fontSize: "clamp(12px, 2.5vw, 15px)" }}
                       >
                         <svg
@@ -560,7 +560,7 @@ export default function Pricing() {
                         <span>Something</span>
                       </p>
                       <p
-                        className="Gilroy-Regular text-[#ffffff] flex items-center gap-2 "
+                        className="Gilroy-Regular text-[#0d0d0d] flex items-center gap-2 "
                         style={{ fontSize: "clamp(12px, 2.5vw, 15px)" }}
                       >
                         <svg
@@ -580,7 +580,7 @@ export default function Pricing() {
                         <span>Something</span>
                       </p>
                       <p
-                        className="Gilroy-Regular text-[#ffffff] flex items-center gap-2 "
+                        className="Gilroy-Regular text-[#0d0d0d] flex items-center gap-2 "
                         style={{ fontSize: "clamp(12px, 2.5vw, 15px)" }}
                       >
                         <svg

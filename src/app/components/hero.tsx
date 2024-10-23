@@ -8,7 +8,7 @@ export default function Hero() {
       <nav className="h-dvh pb-[100px] w-full max-w-[1200px]">
         <div className="w-full h-[80%]  flex justify-center items-start flex-col">
           <h1
-            className="Gilroy-Bold text-[75px] text-slate-50 text-balance uppercase"
+            className="Gilroy-Bold text-[75px] text-[#1b1b1b] text-balance uppercase"
             style={{ 
               fontSize: "clamp(23px, 15vw, 155px)",
               lineHeight: "clamp(55px, 13vw, 125px)"
@@ -46,7 +46,7 @@ export default function Hero() {
             </a>
             <Button
               variant="outline"
-              className="flex items-center gap-2 rounded-[16px] p-6 bg-transparent text-slate-50 border-slate-50"
+              className="flex items-center gap-2 rounded-[16px] p-6 "
             >
               Book us now{" "}
               <svg
