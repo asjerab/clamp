@@ -23,14 +23,14 @@ export default function footer() {
               </div>
             </div>
           </nav>
-          <div className="pb-[25px] flex justify-center gap-5">
-            <Link href="" className="Gilroy-Regular hover:-translate-y-2 duration-150 ease-in-out">
+          <div className="pb-[25px] flex justify-center gap-5 flex-wrap">
+            <Link href="/About" className="Gilroy-Regular hover:-translate-y-2 duration-150 ease-in-out">
               About
             </Link>
-            <Link href="" className="Gilroy-Regular hover:-translate-y-2 duration-150 ease-in-out">
+            <Link href="/Work" className="Gilroy-Regular hover:-translate-y-2 duration-150 ease-in-out">
               Work
             </Link>
-            <Link href="" className="Gilroy-Regular hover:-translate-y-2 duration-150 ease-in-out">
+            <Link href="/Contact" className="Gilroy-Regular hover:-translate-y-2 duration-150 ease-in-out">
               Contact
             </Link>
             <Link href="" className="Gilroy-Regular hover:-translate-y-2 duration-150 ease-in-out">

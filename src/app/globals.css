@@ -188,6 +188,12 @@ nav p {
     padding: 20px; /* Optional padding inside the menu */
     box-sizing: border-box; /* Ensure padding is included in width calculation */
   }
+
+  .footer-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
   
 }
 
