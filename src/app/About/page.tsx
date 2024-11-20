@@ -9,7 +9,6 @@ export default function About() {
 
   return (
     <main>
-      <Nav />
       <div className="px-[25px]">
         <div
           className="w-full max-w-[1200px] mx-auto"

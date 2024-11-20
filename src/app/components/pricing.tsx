@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Pricing() {
   return (
-    <main className="flex justify-center items-center text-center" id="Pricing">
+    <main className="flex justify-center items-center text-center pb-[100px]" id="Pricing">
       <div className="w-full max-w-[1200px] p-5">
         <nav className="flex flex-col items-center gap-4">
           <h1

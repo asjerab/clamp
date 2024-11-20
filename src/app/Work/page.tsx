@@ -47,7 +47,6 @@ export default function Work() {
 
   return (
     <main>
-      <Nav />
       <div className="p-[25px]">
         <div
           className="w-full max-w-[1200px] mx-auto"

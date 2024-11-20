@@ -2,31 +2,13 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { LoginLink, LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
-import {
-  ClerkProvider,
-  SignIn,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from "@clerk/nextjs";
+
 
 const Nav: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // New state for login status
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-  };
-
-  const handleAuthClick = () => {
-    if (isLoggedIn) {
-      // Logic to log out the user
-      setIsLoggedIn(false);
-    } else {
-      // Logic to log in the user
-      setIsLoggedIn(true);
-    }
   };
 
   return (
@@ -46,10 +28,11 @@ const Nav: React.FC = () => {
 
           <div className="flex gap-1 items-center">
             <div>
-              <button
-                className="py-2 px-4 border-[1px] border-[#0d0d0d] rounded-full border-opacity-15 hover:bg-[#f5f5f5]"
-                onClick={handleAuthClick} // Updated to handle login/logout
-              >Login</button>
+              <Link href="/login">
+                <button className="py-2 px-4 border-[1px] border-[#0d0d0d] rounded-full border-opacity-15 hover:bg-[#f5f5f5]">
+                  Login
+                </button>
+              </Link>
             </div>
             {isMenuOpen ? (
               <div className="p-2 border-[1px] border-[#0d0d0d] rounded-full">
@@ -101,7 +84,7 @@ const Nav: React.FC = () => {
                 <li className="flex items-center justify-between text-black text-[18px] font-medium">
                   <Link
                     href="/"
-                    className="Gilroy-Semibold flex justify-between items-center text-[22px] flex-1 px-2 py-2 rounded-md hover:bg-[#e0e7ff] duration-200 group" // Changed hover color
+                    className="Gilroy-Bold flex justify-between items-center text-[22px] flex-1 px-2 py-2 rounded-md hover:bg-[#e0e7ff] duration-200 group" // Changed hover color
                   >
                     HOME
                     <svg
@@ -123,7 +106,7 @@ const Nav: React.FC = () => {
                 <li className="flex items-center justify-between text-black text-[18px] font-medium">
                   <Link
                     href="/About"
-                    className="Gilroy-Semibold flex justify-between items-center text-[22px] flex-1 px-2 py-2 rounded-md hover:bg-[#e0e7ff] duration-200 group"
+                    className="Gilroy-Bold flex justify-between items-center text-[22px] flex-1 px-2 py-2 rounded-md hover:bg-[#e0e7ff] duration-200 group"
                   >
                     ABOUT US
                     <svg
@@ -145,7 +128,7 @@ const Nav: React.FC = () => {
                 <li className="flex items-center justify-between text-black text-[18px] font-medium">
                   <Link
                     href="/Work"
-                    className="Gilroy-Semibold flex justify-between items-center text-[22px] flex-1 px-2 py-2 rounded-md hover:bg-[#e0e7ff] duration-200 group"
+                    className="Gilroy-Bold flex justify-between items-center text-[22px] flex-1 px-2 py-2 rounded-md hover:bg-[#e0e7ff] duration-200 group"
                   >
                     WORK
                     <svg
@@ -167,7 +150,7 @@ const Nav: React.FC = () => {
                 <li className="flex items-center justify-between text-black text-[18px] font-medium">
                   <Link
                     href="/Contact"
-                    className="Gilroy-Semibold flex justify-between items-center text-[22px] flex-1 px-2 py-2 rounded-md hover:bg-[#e0e7ff] duration-200 group"
+                    className="Gilroy-Bold flex justify-between items-center text-[22px] flex-1 px-2 py-2 rounded-md hover:bg-[#e0e7ff] duration-200 group"
                   >
                     CONTACT
                     <svg

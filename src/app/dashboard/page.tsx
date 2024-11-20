@@ -2,13 +2,10 @@ import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
 import Link from "next/link";
 import Nav from "../components/nav";
 
-// Assuming you have a way to check if the user is logged in
-const isLoggedIn = false; // Replace with actual login check
 
 export default async function dashboard() {
   return (
     <main>
-      <Nav />
       <div className="flex justify-center px-[25px]">
         <div className="w-full max-w-[1200px]">
           <nav className="py-[75px]">
@@ -25,6 +22,8 @@ export default async function dashboard() {
               Clamp, we scale with you - scaling made easy.
             </p>
           </nav>
+
+          
         </div>
       </div>
     </main>

@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <main className="flex justify-center items-center p-10 h-full">
-      <nav className="h-dvh pb-[100px] w-full max-w-[1200px]">
-        <div className="w-full h-[80%]  flex justify-center items-start flex-col">
+    <main className="">
+      <nav className="h-[85dvh] w-full max-w-[1200px]">
+        <div className="w-full h-[90%] p-6  flex justify-center items-start flex-col">
           <h1
             className="Gilroy-Bold text-[75px] text-[#1b1b1b] text-balance uppercase"
             style={{ 
