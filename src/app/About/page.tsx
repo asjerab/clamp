@@ -19,7 +19,7 @@ export default function About() {
         >
           <nav>
             <h1
-              className="Gilroy-Semibold text-[#0d0d0d] text-balance leading-[50px] w-full"
+              className="Gilroy-Semibold text-[#0d0d0d] text-balance leading-none w-full"
               style={{
                 fontSize: "clamp(25px, 9vw, 100px)",
                 lineHeight: "clamp(30px, 5vw, 50px)",
@@ -29,9 +29,10 @@ export default function About() {
               Welcome to Clamp{" "}
             </h1>
             <p
-              className="Gilroy-Regular text-[15px] text-[#999999] w-full max-w-[500px] pt-3"
+              className="Gilroy-Regular py-5 text-[#999999] w-full max-w-[1000px] pt-3"
               style={{
                 paddingBottom: "clamp(25px, 5vw, 100px)",
+                fontSize: "clamp(15px, 5vw, 25px)",
               }}
             >
               Clamp is a team of developers and designers who are passionate

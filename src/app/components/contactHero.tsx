@@ -14,15 +14,7 @@ export default function ContactPageHero() {
           Let’s Build Your Future
         </h1>
 
-        <div className="isolate bg-white py-24">
-        <div className="max-w-2xl">
-          <h2 className="text-balance text-4xl Gilroy-Semibold tracking-tight text-gray-900 sm:text-5xl">
-            Contact sales
-          </h2>
-          <p className="mt-2 text-lg text-gray-600">
-            Aute magna irure deserunt veniam aliqua magna enim voluptate.
-          </p>
-        </div>
+        <div className="isolate bg-white">
 
         <form
           action="#"
@@ -35,7 +27,7 @@ export default function ContactPageHero() {
                 htmlFor="first-name"
                 className="block text-sm Gilroy-Semibold text-gray-900"
               >
-                Full Name
+                First Name
               </label>
               <div className="mt-2.5">
                 <input
@@ -43,7 +35,7 @@ export default function ContactPageHero() {
                   name="first-name"
                   id="first-name"
                   autoComplete="given-name"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#3a86ff] sm:text-sm"
+                  className="block w-full rounded-md border-0 px-3.5 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#3a86ff] sm:text-sm"
                 />
               </div>
             </div>
@@ -61,7 +53,7 @@ export default function ContactPageHero() {
                   name="last-name"
                   id="last-name"
                   autoComplete="family-name"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#3a86ff] sm:text-sm"
+                  className="block w-full rounded-md border-0 px-3.5 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#3a86ff] sm:text-sm"
                 />
               </div>
             </div>
@@ -79,7 +71,7 @@ export default function ContactPageHero() {
                   name="Selskap/Bedriftny"
                   id="Selskap/Bedriftny"
                   autoComplete="organization"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#3a86ff] sm:text-sm"
+                  className="block w-full rounded-md border-0 px-3.5 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#3a86ff] sm:text-sm"
                 />
               </div>
             </div>
@@ -97,7 +89,7 @@ export default function ContactPageHero() {
                   name="email"
                   id="email"
                   autoComplete="email"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#3a86ff] sm:text-sm"
+                  className="block w-full rounded-md border-0 px-3.5 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#3a86ff] sm:text-sm"
                 />
               </div>
             </div>
@@ -115,7 +107,7 @@ export default function ContactPageHero() {
                   name="phone-number"
                   id="phone-number"
                   autoComplete="tel"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#3a86ff] sm:text-sm"
+                  className="block w-full rounded-md border-0 px-3.5 py-3 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#3a86ff] sm:text-sm"
                 />
               </div>
             </div>
@@ -132,7 +124,7 @@ export default function ContactPageHero() {
                   name="message"
                   id="message"
                   rows= {4}
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#3a86ff] sm:text-sm"
+                  className="block w-full rounded-md border-0 px-3.5 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#3a86ff] sm:text-sm"
                 ></textarea>
               </div>
             </div>
@@ -141,7 +133,7 @@ export default function ContactPageHero() {
           <div className="mt-10">
             <button
               type="submit"
-              className="block w-full rounded-full bg-[#3a86ff] px-3.5 py-2.5 text-center text-sm Gilroy-Semibold text-white shadow-sm hover:bg-[#508ff6] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="block w-full rounded-full bg-[#000] px-3.5 py-3.5 text-center text-sm Gilroy-Semibold text-white border-[1px] hover:bg-[#1b1b1b] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Let's talk
             </button>
